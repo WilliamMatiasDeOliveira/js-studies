@@ -1,7 +1,7 @@
 // Operações ternarias
 
 // modo sem o uso da operação ternaria
-/*
+
 let num = 11
 let result = num % 2
 
@@ -10,7 +10,7 @@ if(result == 0){
 }else{
     console.log("impar")
 }
-*/
+
 
 // utilizando a operação ternaria
 
