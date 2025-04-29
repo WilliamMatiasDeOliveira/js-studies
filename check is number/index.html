@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="num">
+
+<button type="button"onclick='checkIsNumber()'>Submit</button>
+
+<p id="menssagem"></p>
+
+<script>
+
+function checkIsNumber(){
+    const num = document.getElementById('num').value
+    let text
+    if(isNaN(num)){
+        text = "DEVE SER UM NUMERO"
+    }else{
+        text = "ENVIO OK"
+    }
+    document.getElementById('menssagem').innerHTML = text
+}
+</script>
+
+</body>
+</html> 
