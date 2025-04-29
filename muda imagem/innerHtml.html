@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Html</title>
+    <style>
+        #image{
+            width: 200px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="texto">eu sou um texto</h1>
+
+    <button id="mudaTexto">MUDAR TEXTO</button>
+
+    <br>
+
+    <div>
+        <img src="olho.jpg"id='image'>
+        <br>
+        <button id="botaoMudaImagem">MUDAR IMAGEM</button>
+    </div>
+
+    <script>
+        // muda texto
+        const muda = document.getElementById('mudaTexto')
+        muda.addEventListener('click', mudaTexto)
+        
+        function mudaTexto(){
+            let texto = document.getElementById('texto')
+            texto.innerHTML = "agora sou javascript"
+        }
+
+        // muda imagem
+        const botaoMudaImagem = document.getElementById('botaoMudaImagem')
+        botaoMudaImagem.addEventListener('click', trocaImagem)
+        
+        function trocaImagem(){
+            let image = document.getElementById('image')
+            image.src = 'olho2.jpg'
+        }
+
+    </script>
+</body>
+</html>
